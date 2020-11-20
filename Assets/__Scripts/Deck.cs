@@ -173,7 +173,7 @@ public class Deck : MonoBehaviour {
 			}
 			
 			card.def = GetCardDefinitionByRank(card.rank);
-			
+
 			// Add Decorators
 			foreach (Decorator deco in decorators) {
 				tGO = Instantiate(prefabSprite) as GameObject;
@@ -267,6 +267,8 @@ public class Deck : MonoBehaviour {
 	 	List<Card> tCards = new List<Card>();
 
 	 	int ndx;   // which card to move
+
+		tCards = new List<Card>(); // Initialize the temporary List
 
 	 	while (oCards.Count > 0) 
 	 	{
