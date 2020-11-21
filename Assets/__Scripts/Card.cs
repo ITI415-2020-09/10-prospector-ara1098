@@ -17,6 +17,7 @@ public class Card : MonoBehaviour {
 
 	public SpriteRenderer[] spriteRenderers;
 
+
     public void PopulateSpriteRenderers()
     {
         // If spriteRenderers is null or empty 
